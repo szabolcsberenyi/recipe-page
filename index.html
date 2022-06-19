@@ -12,10 +12,10 @@
     <header>
         <div class="header">
             <p class="title"><strong>Receptek</strong></p>
-            <ul class="loginpanel">
-                <li><a href="login.html">Bejelentkezés</a></li>
-                <li><a href="register.html">Regisztráció</a></li>
-            </ul>
+            <div class="loginpanel">
+                <p><a href="login.html">Bejelentkezés</a></p><br>
+                <p><a href="registration/registration.html">Regisztráció</a></p>
+            </div>
         </div>
     </header>
 
@@ -32,41 +32,35 @@
         </div>
 
         <div class="main">
-            <div class="recipe-row">
-                <div class="recipe">
-                    <p>This is a recipe.</p>
+            <div id="recipe-view">
+                <div id="page-turn">
+                    <a href="" id="first-page">1</a>
+                    <p>...</p>
+                    <a href="" id="previous-page-num">2</a>
+                    <a href="" id="current-page-num">3</a>
+                    <a href="" id="next-page-num">4</a>
+                    <p>...</p>
+                    <a href="" id="last-page">13</a>
+
                 </div>
-                <div class="recipe">
-                    <p>This is a recipe.</p>
+                <div id="recipe-per-page">
+                    <label for="recipe-number">recept/oldal:</label>
+                    <input type="text" name="recipe-number" id="recipe-number" list="recipe-number-options">
+                    <datalist id="recipe-number-options">
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+
+
+                    </datalist>
                 </div>
-                <div class="recipe">
-                    <p>This is a recipe.</p>
-                </div>
+            </div>
+            <div id="recipes">
+
             </div>
 
-            <div class="recipe-row">
-                <div class="recipe">
-                    <p>This is a recipe.</p>
-                </div>
-                <div class="recipe">
-                    <p>This is a recipe.</p>
-                </div>
-                <div class="recipe">
-                    <p>This is a recipe.</p>
-                </div>
-            </div>
-
-            <div class="recipe-row">
-                <div class="recipe">
-                    <p>This is a recipe.</p>
-                </div>
-                <div class="recipe">
-                    <p>This is a recipe.</p>
-                </div>
-                <div class="recipe">
-                    <p>This is a recipe.</p>
-                </div>
-            </div>
+            
         </div>
     </div>
 </body>
