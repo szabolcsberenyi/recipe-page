@@ -13,8 +13,8 @@
         <div class="header">
             <p class="title"><strong>Receptek</strong></p>
             <div class="loginpanel">
-                <p><a href="login.html">Bejelentkezés</a></p><br>
-                <p><a href="registration/registration.html">Regisztráció</a></p>
+                <a href="login.html">Bejelentkezés</a><br>
+                <a href="registration/registration.html">Regisztráció</a>
             </div>
         </div>
     </header>
@@ -35,33 +35,29 @@
             <div id="recipe-view">
                 <div id="page-turn">
                     <a href="" id="first-page">1</a>
-                    <p>...</p>
+                    <span>...</span>
                     <a href="" id="previous-page-num">2</a>
                     <a href="" id="current-page-num">3</a>
                     <a href="" id="next-page-num">4</a>
-                    <p>...</p>
+                    <span>...</span>
                     <a href="" id="last-page">13</a>
 
                 </div>
                 <div id="recipe-per-page">
-                    <label for="recipe-number">recept/oldal:</label>
-                    <input type="text" name="recipe-number" id="recipe-number" list="recipe-number-options">
-                    <datalist id="recipe-number-options">
-                        <option value="2"></option>
-                        <option value="3"></option>
-                        <option value="4"></option>
-                        <option value="5"></option>
-
-
-                    </datalist>
+                    <label for="recipe-number">recept/sor:</label>
+                    <select  name="recipe-number" id="recipe-number">
+                        <option value="3">3</option>
+                        <option value="4" selected="selected">4</option>
+                        <option value="5">5</option>
+                    </select>
                 </div>
             </div>
             <div id="recipes">
 
             </div>
 
-            
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

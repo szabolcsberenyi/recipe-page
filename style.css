@@ -30,7 +30,7 @@ body{
     padding-right: 2%;
     font-size: 1.5em;
 }
-a{
+.loginpanel>a{
     color: black;
     background-color: white;
 }
@@ -55,16 +55,43 @@ a:visited{
     flex-direction: column;
     margin-right: 6%;
 }
-.recipe-row{
+
+
+#recipe-view{
     display: flex;
-    flex:1;
-    margin-bottom: 3%;
+    flex-direction: row;
 }
+
+#page-turn{
+    flex: 2;
+    text-align: center;
+}
+
+#page-turn>*{
+    padding: 0.5em;
+}
+
+#recipe-per-page{
+    flex: 0.2;
+}
+
+#recipe-per-page>input{
+    width: 2em;
+}
+
+#recipes{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+
+
+
+
 
 .recipe{
     height: 200px;
     width: 200px;
-    flex: 1;
+    display: grid;
     text-align: left;
     border-bottom: 3px solid black;
     padding: 2%;
