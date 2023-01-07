@@ -1,4 +1,14 @@
-<div class="col-xs-20">
-    
+<div class="col-xs-20 recipe">
+    <h4>{{recipe.name}}</h4>
+    <div class="details">
+        <ul>
+            <li>{{recipe.difficulty}}</li>
+            <li>{{recipe.cookTime}}</li>
+        </ul>
+    </div>
+    <div>
+        <img [src]="recipe.image" [alt]="recipe.alt" width="200" height="200">
+    </div>
+    <hr>
     <button type="button" class="btn btn-primary">Jump to recipe</button>
 </div>

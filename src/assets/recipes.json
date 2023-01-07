@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Test Recipe",
+        "difficulty": "easy",
+        "cookTime": 20,
+        "image": "assets/img/test.PNG",
+        "alt": "berd with a fucking gun",
+        "ingredients":[
+            {
+                "name": "test ingredient",
+                "amount": 25,
+                "unit": "grams"
+            }
+        ],
+        "steps":[
+            "step one",
+            "step two"
+        ]
+        
+    }
+]
