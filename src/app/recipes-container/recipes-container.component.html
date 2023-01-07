@@ -1,8 +1,19 @@
-<div class="selection-menu col-xs-20">
-    <label for="recipe-amount">Recipes per page:</label>
-    <input type="number" name="recipe-amount" id="recipe-amount">
-</div>
+<div class="recipe-container">
 
-<div *ngFor="let recipe of recipes">
-    <app-recipe [recipe]="recipe"></app-recipe>
+    <div class="selection-menu col-xs-20">
+        <label for="recipe-amount">Recipes per page:</label>
+        <select type="number" name="recipe-amount" id="recipe-amount" >
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select>
+
+    </div>
+    
+    
+    <div *ngFor="let recipe of recipes">
+        <app-recipe [recipe]="recipe"></app-recipe>
+    </div>
 </div>
+    
