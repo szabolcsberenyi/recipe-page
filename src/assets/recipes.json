@@ -17,5 +17,62 @@
             "step two"
         ]
         
+    },
+    {
+        "name": "Test Recipe 2",
+        "difficulty": "easy",
+        "cookTime": 20,
+        "image": "assets/img/test.PNG",
+        "alt": "berd with a fucking gun",
+        "ingredients":[
+            {
+                "name": "test ingredient",
+                "amount": 25,
+                "unit": "grams"
+            }
+        ],
+        "steps":[
+            "step one",
+            "step two"
+        ]
+        
+    },
+    {
+        "name": "Test Recipe 3",
+        "difficulty": "easy",
+        "cookTime": 20,
+        "image": "assets/img/test.PNG",
+        "alt": "berd with a fucking gun",
+        "ingredients":[
+            {
+                "name": "test ingredient",
+                "amount": 25,
+                "unit": "grams"
+            }
+        ],
+        "steps":[
+            "step one",
+            "step two"
+        ]
+        
+    },
+    {
+        "name": "Test Recipe 4",
+        "difficulty": "easy",
+        "cookTime": 20,
+        "image": "assets/img/test.PNG",
+        "alt": "berd with a fucking gun",
+        "ingredients":[
+            {
+                "name": "test ingredient",
+                "amount": 25,
+                "unit": "grams"
+            }
+        ],
+        "steps":[
+            "step one",
+            "step two"
+        ]
+        
     }
 ]

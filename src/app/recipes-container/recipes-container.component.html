@@ -1,19 +1,6 @@
-<div class="recipe-container">
-
-    <div class="selection-menu col-xs-20">
-        <label for="recipe-amount">Recipes per page:</label>
-        <select type="number" name="recipe-amount" id="recipe-amount" >
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-        </select>
-
+<ng-container class="recipe-container">
+    <div *ngFor="let ind of ROW_LIST;">
+        <app-recipes-row [recipes]="GetRecipesInRow(ind)"></app-recipes-row>
     </div>
-    
-    
-    <div *ngFor="let recipe of recipes">
-        <app-recipe [recipe]="recipe"></app-recipe>
-    </div>
-</div>
+</ng-container>
     
